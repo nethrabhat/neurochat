@@ -1,0 +1,56 @@
+# NeuroChat .gitignore
+# ────────────────────
+
+# ── Secrets & environment ────────────────────────────────────────────────────
+.env
+*.env.local
+
+# ── Python virtual environments ───────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Distribution / packaging ──────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+*.xml
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── NeuroLinkDB local database files (Phase 2+) ───────────────────────────────
+*.ndb
+*.ndb-wal
+*.ndb-shm
+data/
+db/
+
+# ── Embedding / index files (Phase 4+) ───────────────────────────────────────
+*.index
+*.centroid
+models/
+embeddings/
+
+# ── IDE / OS ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
